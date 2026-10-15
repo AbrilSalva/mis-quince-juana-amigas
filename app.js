@@ -22,7 +22,9 @@ $("#enterBtn").addEventListener("click", () => {
   const musicToggle = document.getElementById("musicToggle");
 
   music.volume = 0.35;
+music.currentTime = 30;
 
+music.play().then(() => {
   music.play().then(() => {
     musicToggle.classList.remove("hidden");
     musicToggle.textContent = "❚❚";
