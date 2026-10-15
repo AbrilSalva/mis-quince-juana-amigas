@@ -303,8 +303,3 @@ async function loadMessages() {
 }
 
 loadMessages();
-
-
-function escapeHtml(str=""){
-  return String(str).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-}
